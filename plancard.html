@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Websites </title>
+
+
+    <!-- Boostrap cdn link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+        <!--Bundle
+Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more information about what’s included in Bootstrap, please see our contents section.-->
+
+<!--Separate
+If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or popovers), and then our JavaScript plugins.-->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<!-- css External link -->
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- Favicion icon -->
+<link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+<!-- Box link -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+<!-- trending carousel slider cdn link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+
+
+<body>
+
+<!-- navbar -->    
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cine<span>flix</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"> <i class="bx bxs-home" aria-hidden="true" ></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"> <i class="bx bxs-hot" aria-hidden="true" ></i>Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"> <i class="bx bxs-compass" aria-hidden="true" ></i> Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./playpage.html"> <i class="bx bxs-tv" aria-hidden="true" ></i> Free Movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./plancard.html"> <i class="bx bx-dollar"></i> Plans</a>
+          </li>
+        
+        </ul>
+        <form class="d-flex mt-3" style="float: right;" action="./loginpage.html">
+          <button class="btn btn-outline-warning d-flex" type="submit" id="searchbutton"  data-bs-toggle="modal" data-bs-target="#mymodalenroll"> <i class="fa fa-user" aria-hidden="true" ></i> </button>
+        </form>    
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- plan price card -->
+
+  <div class="container">
+    
+    
+    <div class="row  planbox">
+      <div class="amount2 col-lg-4 col-md-4 col-6">
+
+        <div class="card" style="width: 28rem; height: 50rem;">
+            <div class="card-body">
+              <span class="text-center d-block">Annual at</span>
+              <h3 class="card-title">₹125/month*</h3>
+              <span>Enjoy all <br></span>
+              <span>Watch Cineflix video on multiple <br> devices 4K UHD (2160P) <br> quality</span> 
+             <span>Enjoy ad-free music on MovieVel <br> Music and many more benifits</span><br>
+             
+              <a href="#" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#mymodalenroll">Join</a>
+            </div>
+          </div>
+      
+  
+      </div>
+
+      <!-- plan2 -->
+
+      <div class="amount2 col-lg-4 col-md-4 col-8" id="plan2">
+
+        <div class="card" style="width: 28rem; height: 50rem;">
+            <div class="card-body">
+              <span class="text-center d-block">Lite at</span>
+              <h3 class="card-title">₹799/year*</h3>
+              <span>Enjoy all <br></span>
+              <span>Watch Cineflix video on any one <br> screen (mobile or Tv) with ads in <br>
+            HD (720p)</span>
+             <span>Enjoy ad-free music on MovieVel <br> Music and many more benifits</span><br> 
+              <a href="#" class="btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#mymodalenroll">Join</a>
+            </div>
+          </div>
+      
+  
+      </div>
+
+      <!-- plan3 -->
+      <div class="amount2 col-lg-4 col-md-4 col-8">
+
+        <div class="card" style="width: 28rem; height: 50rem;">
+            <div class="card-body">
+              <span class="text-center d-block"> Monthly at</span>
+              <h3 class="card-title"> ₹299/month*</h3>
+              <span>Enjoy all <br></span>
+              <span>Watch Cineflix video on multiple <br> devices 4K UHD (2160P) <br> quality (ad-free)</span> 
+             <span>Enjoy ad-free music on MovieVel <br> Music and many more benifits</span><br>
+             
+              <a href="#" class="btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#mymodalenroll">Join</a>
+            </div>
+          </div>
+      
+  
+      </div>
+
+      
+
+     
+    </div>
+
+      </div>
+      
+     
+  </div>
+  
+
+ <!-- plan price card   end-->
+
+
+
+ 
+
+<!-- new modal -->
+
+<div class="modal" id="mymodalenroll" >
+ 
+ 
+  <div class="modal-dialog modal-dialog-top">
+    <div class="modal-content">
+      <!-- modal header -->
+      <div class="modal-header">
+      
+        <h4 class="modal-title " style="text-align: center; color:  #2d2e37; display: block;">Pay with card</h4>
+        <button type="button" class="btn-close " style="background-color: #2d2e37; color:  #ffb43a;" data-bs-dismiss="modal"></button>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >Pay with card</button> -->
+
+      </div>
+      <!-- modal -->
+      <div class="modal-body">
+        <h4 id="successfuly" style="color: green; text-align: center;" name="abc"></h4>
+        <h4 id="success" style="color: green; text-align: center;" name="abc"></h4>
+        
+       
+        
+        <form class="row g-3 text-dark paycard" onsubmit="return validateform()" name="myform" action="./amountmov.html">
+         
+          <div class="col-md-6">
+            <div class="input-controol">
+            <label for="validationDefault01" class="form-label text-dark">Email:</label>
+            <input type="email" class="form-control" id="validationDefault01"   placeholder="Email" name="email" >
+            <div class="error"></div>
+            <div class="success"></div>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-controol">
+            <label for="validationDefault02" class="form-label text-dark">Card number:</label>
+            <input type="tel" class="form-control text-dark" id="validationDefault02"  placeholder="xxxx-xxxx-xxxx-xxxx" name="number"  maxlength="16" onkeypress="return event.charCode>=48 && event.charCode<=63" autocomplete="cc-number">
+            <div class="error"></div>
+
+          </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- <label for="validationDefaultUsername" class="form-label">Username</label> -->
+            <div class="input-group">
+              <!-- <span class="input-group-text" id="inputGroupPrepend2">@</span> -->
+              <div class="input-controol">
+                <label for="">Expiration date:</label>
+              <input type="month" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2"  placeholder="MM/YY" name="exepire"  autocomplete="cc-exp">
+              <div class="error"></div>
+            </div>
+            </div>
+          </div>
+         
+          <div class="col-md-12">
+            <div class="input-controol">
+            <label for="validationDefault04" class="form-label text-dark">Cardholder name:</label>
+            <input type="text" class="form-control" id="validationDefault04" placeholder="Cardholder name:" name="cardname">
+            <div class="error"></div>
+            </div>
+
+          </div>
+         
+          <div class="col-12 mt-3">
+            <div class="form-check " >
+              <div class="input-controol">
+
+              <input class="form-check-input  thumbnail  invalidCheck2" type="checkbox"  name="check">
+              <label class="form-check-label text-dark p-2" for="invalidCheck2" style="opacity: 0.6; border: 1px solid rgb(187, 184, 184);">
+                   Securely save my information for 1-click checkout
+              </label>
+              <div class="error"></div>
+              <div id="success-message"></div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 ">
+          <button class="btn btn-primary d-block mx-auto  paymentbtn  submitbtn " type="submit"  disabled value="submit" >Confirm Pay</button>
+         
+          </div>
+        </form>
+        <!-- formend -->
+        
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+ 
+
+
+
+
+
+
+  
+
+
+
+ <!-- 2 -->
+ 
+
+  
+</div>
+  <!-- footer -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <footer class="p-3 text-center">
+          <i class="bx bxs-copyright p-2" aria-hidden="true">Cineflix All Right Reserved</i>
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+
+<!-- Jquery cdn -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- validate cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+
+<!--  Javascript External link-->
+<script src="./val.js"></script>
+<!-- Jquery slider cdn -->
+
+
+
+
+
+
+
+</body>
+</html>

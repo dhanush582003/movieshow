@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Websites </title>
+
+
+    <!-- Boostrap cdn link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+        <!--Bundle
+Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more information about what’s included in Bootstrap, please see our contents section.-->
+
+<!--Separate
+If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or popovers), and then our JavaScript plugins.-->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<!-- css External link -->
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- Favicion icon -->
+<link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+<!-- Box link -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+<!-- trending carousel slider cdn link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+
+
+<body>
+
+<!-- navbar -->    
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cine<span>flix</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"> <i class="bx bxs-home" aria-hidden="true" ></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"> <i class="bx bxs-hot" aria-hidden="true" ></i>Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"> <i class="bx bxs-compass" aria-hidden="true" ></i> Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./playpage.html"> <i class="bx bxs-tv" aria-hidden="true" ></i> Free Movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./plancard.html"> <i class="bx bx-dollar"></i> Plans</a>
+          </li>
+          
+        
+        </ul>
+          
+      </div>
+    </div>
+  </nav>
+
+
+
+  
+<!-- card -->
+<div class="card mx-auto " style="width: 33rem;">
+   
+    <div class="card-body">
+        <h3 id="loginsuccess" style="color: green; text-align: center; background-color: white;"></h3>
+        <h3 class="text-center"> <i class="fa fa-user" aria-hidden="true" ></i> Login</h3> <br>
+      <form action="./index.html" class="text-center p-4 paycard"  onsubmit="return validateform()"  name="myform">
+
+
+        <div class="input-controol" >
+        <input type="email" name="email" id="eml" placeholder="Email" style="color: black; width: 100%; height: 100%; padding: 3px; font-size: 1.5rem;  outline: none; border: none;" ><br><br>
+        <br>
+       
+    </div>
+
+
+    <div class="input-controol">
+       
+        <input type="password" name="pass1" id="pas" placeholder="Password" style="width: 100%; height: 100%; padding: 3px;  outline: none; border: none; color: black; font-size: 1.5rem;" class=" "><br><br>
+        <div class="error"></div>
+    </div>
+        <input type="checkbox" name="check" class="  invalidCheck2" >
+        <span>Remember me</span><br><br>
+        <button class="btn btn-primary mx-auto d-block  submitbtn" value="submit"   disabled  onclick="log()">Login</button>
+        <span class="text-white">or</span><br>
+        <a href="#"   data-bs-toggle="modal" data-bs-target="#mymodalenroll"><u>create an account</u></a>
+      </form>
+
+    
+      <a href="./index.html" class="text-center d-block text-white"><u>Back</u></a>
+    </div>
+  </div>
+<!-- card end -->
+
+
+
+
+
+  
+
+
+
+ <!-- 2 -->
+
+
+
+
+
+
+
+
+ <!-- create an account -->
+
+  
+<!-- new modal -->
+
+<div class="modal" id="mymodalenroll" >
+ 
+ 
+  <div class="modal-dialog modal-dialog-top">
+    <div class="modal-content">
+      <!-- modal header -->
+      <div class="modal-header">
+      
+        <h4 class="modal-title " style="text-align: center; color:  #2d2e37; display: block;">Create Account</h4>
+        <button type="button" class="btn-close " style="background-color: #2d2e37; color:  #ffb43a;" data-bs-dismiss="modal"></button>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >Pay with card</button> -->
+
+      </div>
+      <!-- modal -->
+      <div class="modal-body">
+        <h4 id="successfuly" style="color: green; text-align: center;" name="abc"></h4>
+        <h4 id="success" style="color: green; text-align: center;" name="abc"></h4>
+        
+       
+        
+        <form class="row g-3 text-dark valaccounut" onsubmit="return matchpass()" name="matchpassword" action="./loginpage.html">
+         
+          <div class="col-md-6">
+            <div class="input-controol">
+            <label for="validationt01" class="form-label text-dark">First Name:</label>
+            <input type="text" class="form-control" id="validationt01"   placeholder="First Name" name="firstname" >
+            <div class="error"></div>
+            <div class="success"></div>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-controol">
+            <label for="validation02" class="form-label text-dark">Last Name:</label>
+            <input type="text" class="form-control text-dark" id="validation02"  placeholder="Last Name" name="lname">
+            <div class="error"></div>
+
+          </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- <label for="validationDefaultUsername" class="form-label">Username</label> -->
+            <div class="input-group">
+              <!-- <span class="input-group-text" id="inputGroupPrepend2">@</span> -->
+              <div class="input-controol">
+              <label for="validationpnumber">Mobile Number:</label>
+              <input type="text" class="form-control" id="validationpnumber"  aria-describedby="inputGroupPrepend2"  placeholder="Mobile Number" name="pnumber"  maxlength="10" onkeypress="return event.charCode>=48 && event.charCode<=56">
+              <div class="error"></div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- <label for="validationDefault03" class="form-label">City</label> -->
+            <div class="input-controol">
+              <label for="validation03" class="form-label text-dark">Email:</label>
+              <input type="email" class="form-control" id="validation03"   placeholder="Email" name="email" >
+            <div class="error"></div>
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="validation04"> Create Password:-</label>
+          </div>
+          <div class="col-md-6">
+            <div class="input-controol">
+            <label for="validation04" class="form-label text-dark">New Password:</label>
+            <input type="password" class="form-control" id="validation04" placeholder="Create Password" name="pass3">
+            <div class="error"></div>
+            <p class="wrong" style="color: red;"></p>  
+
+           
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="input-controol">
+            <label for="validation05" class="form-label text-dark">Confirm Password:</label>
+            <input type="password" class="form-control" id="validation05" placeholder="Confirm Password" name="pass4">
+            <div class="error"></div>
+            
+
+           
+           </div>
+       </div><br><br>
+
+       <div class="col-12 ">
+        <button class="btn btn-primary d-block mx-auto  w-100 thumbnail" type="submit">Register</button>
+       
+        </div>
+       
+        </form>
+
+        
+       
+        <!-- formend -->
+  <!-- create an account  end-->
+
+ 
+
+</div>
+
+  <!-- footer -->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <footer class="p-3 text-center">
+          <i class="bx bxs-copyright p-2" aria-hidden="true">Cineflix All Right Reserved</i>
+        </footer>
+      </div>
+    </div>
+  </div> -->
+  
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+
+<!-- Jquery cdn -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- validate cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+
+<!--  Javascript External link-->
+<script src="./val.js"></script>
+<!-- Jquery slider cdn -->
+
+
+
+
+
+
+
+</body>
+</html>
